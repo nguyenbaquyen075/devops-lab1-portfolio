@@ -11,6 +11,10 @@ on:
     branches: [main]       # Chạy khi push lên nhánh main
   workflow_dispatch:        # Cho phép chạy thủ công từ GitHub UI
 
+# === Quyền cho GITHUB_TOKEN: cần ghi để push lên nhánh gh-pages ===
+permissions:
+  contents: write
+
 # === Các job trong pipeline ===
 jobs:
   # Job 1: Build & Deploy
