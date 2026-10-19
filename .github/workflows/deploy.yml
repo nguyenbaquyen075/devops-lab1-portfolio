@@ -45,4 +45,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
+          exclude_assets: ''          # Giữ cả thư mục .github/workflows trên nhánh gh-pages
           commit_message: "🚀 Auto-deploy from CI pipeline"
